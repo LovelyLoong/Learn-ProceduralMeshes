@@ -60,6 +60,7 @@ namespace DefaultNamespace
             GetComponent<MeshFilter>().mesh = _mesh;
         }
 
+        
         private void GenerateMesh()
         {
             var meshDataAry = Mesh.AllocateWritableMeshData(1);
@@ -84,7 +85,7 @@ namespace DefaultNamespace
 
         private void OnDrawGizmos()
         {
-            if (gizmoMode == GizmoMode.None || _vertices == null) 
+            if (gizmoMode == GizmoMode.None || _mesh == null) 
                 return;
             
             var drawVertices = (gizmoMode & GizmoMode.Vertices) != 0;
