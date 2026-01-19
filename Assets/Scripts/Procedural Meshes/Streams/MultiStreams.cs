@@ -8,7 +8,7 @@ using UnityEngine.Rendering;
 
 namespace ProceduralMeshes.Streams
 {
-    public struct MultiStream : IMeshStream
+    public struct MultiStreams : IMeshStreams
     {
         
         [NativeDisableContainerSafetyRestriction]

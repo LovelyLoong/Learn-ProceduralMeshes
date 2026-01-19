@@ -7,7 +7,7 @@ namespace ProceduralMeshes
 {
     [BurstCompile(FloatPrecision.Standard, FloatMode.Fast,CompileSynchronously = true)]     //BurstCompile 表示需要使用Burst编译  FloatPrecision 表示精度（一般需要精确就需要使用Standard）  FloatMode 表示模式（Fast的意思就是表示可以接受一些激进策略来优化性能）  CompileSynchronously 表示同步编译
     public struct MeshJob<TS,TG> : IJobFor
-        where TS : struct,IMeshStream
+        where TS : struct,IMeshStreams
         where TG : struct,IMeshGenerator
     {
         

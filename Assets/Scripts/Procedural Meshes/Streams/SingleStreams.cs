@@ -8,7 +8,7 @@ using UnityEngine.Rendering;
 
 namespace ProceduralMeshes.Streams
 {
-    public struct SingleStream : IMeshStream
+    public struct SingleStreams : IMeshStreams
     {
         [StructLayout(LayoutKind.Sequential)]
         struct Stream0

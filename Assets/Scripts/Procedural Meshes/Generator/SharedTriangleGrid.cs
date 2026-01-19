@@ -14,7 +14,7 @@ namespace ProceduralMeshes.Generator
         
         public int Resolution { get; set; }
 
-        public void Execute<T>(int u, T streams) where T : IMeshStream
+        public void Execute<T>(int u, T streams) where T : struct,IMeshStreams
         {
             var vi = u * (Resolution + 1);
             var ti = (u - 1) * 2 * Resolution;

@@ -12,7 +12,7 @@ namespace ProceduralMeshes
         
         int Resolution { get; set; }
         
-        void Execute<T>(int u ,T streams) where T : IMeshStream;
+        void Execute<T>(int u ,T streams) where T : struct,IMeshStreams;
         
         Bounds Bounds { get; }
     }

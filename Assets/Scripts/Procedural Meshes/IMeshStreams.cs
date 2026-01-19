@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ProceduralMeshes
 {
-    public interface IMeshStream
+    public interface IMeshStreams
     {
         void SetUp(Mesh.MeshData data,Bounds bounds,int vertexCount,int indexCount);
 

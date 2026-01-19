@@ -25,12 +25,12 @@ namespace DefaultNamespace
         
         private static MeshJobScheduleDelegate[] _jobs = 
         {
-            MeshJob<SingleStream,SquareGrid>.ScheduleParallel,
-            MeshJob<SingleStream,SharedSquareGrid>.ScheduleParallel,
-            MeshJob<SingleStream,SharedTriangleGrid>.ScheduleParallel,
-            MeshJob<MultiStream,PointyHexagonGrid>.ScheduleParallel,
-            MeshJob<MultiStream,FlatHexagonGrid>.ScheduleParallel,
-            MeshJob<MultiStream,UVSphere>.ScheduleParallel,
+            MeshJob<SingleStreams,SquareGrid>.ScheduleParallel,
+            MeshJob<SingleStreams,SharedSquareGrid>.ScheduleParallel,
+            MeshJob<SingleStreams,SharedTriangleGrid>.ScheduleParallel,
+            MeshJob<MultiStreams,PointyHexagonGrid>.ScheduleParallel,
+            MeshJob<MultiStreams,FlatHexagonGrid>.ScheduleParallel,
+            MeshJob<MultiStreams,UVSphere>.ScheduleParallel,
         };
 
         private enum  MeshType
